@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WordsCalculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="main">
+        <h2>word calculator</h2>
+        <h4>enter paragraph</h4>
+        <div class="main2">
+            <textarea name="textarea" id="input" cols="50" rows="13"></textarea>
+        </div>
+        <div class="button">
+            <button for="input" onclick="convert()">Enter</button>
+        </div>
+        <div class="result" id="result">
+
+        </div>
+
+        <script>
+            function convert()
+            {
+            let Val = document.getElementById("input").value
+            let result = Val.split(" ")
+            result = result.length
+            let result1 = document.getElementById("result")
+            result1.innerHTML = result + " words present in this paragraph"
+            }
+            
+
+
+        </script>
+    </div>
+</body>
+</html>

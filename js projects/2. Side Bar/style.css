@@ -1,0 +1,42 @@
+.bar{
+    font-size:2em;
+}
+
+.sidebar {
+    position:absolute;
+    top: 0;
+    left:-200px;
+    width: 200px;
+    height: 100vh;
+    background-color: wheat;
+    transition : left 1.5s ease , width 1.5s ease;
+}
+
+.expand{
+    left:0;
+    width: 300px;
+}
+
+#main{
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+    font-size: 1.5em;
+}
+
+#remove{
+    width: fit-content;
+    align-self: flex-end;
+    background-color: wheat;
+    border: none;
+}
+
+#Items{
+    text-decoration:none;
+    padding-left: 15px;
+    color:white;
+}
+
+#Items:hover{
+    color:black;
+}

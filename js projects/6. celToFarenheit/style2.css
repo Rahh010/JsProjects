@@ -1,0 +1,59 @@
+:root{
+    --base:#D4ADFC;
+    --t1:#5C469C;
+    --t2:#1D267D;
+    --t3:#0C134F;
+}
+
+body{
+    background-color: var(--base);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    
+}
+
+
+.main{
+    width: 50vw;
+    height: 50vh;
+    background-color:var(--t1);
+    border-radius: .5em;
+    text-transform: capitalize;
+    color: var(--base)
+}    
+.heading{
+    text-align: center;
+    font-size: 1.3em;
+}
+
+.input {
+    text-align: center;
+}
+
+.input input{
+    width: 60%;
+    padding: 8px;
+    font-size: 1.5em;
+}
+
+.button{
+    text-align: center;
+    margin-top: 10px;
+    
+}
+
+.button button{
+    padding: 8px;
+    width: 30%;
+}
+
+#resultVal{
+    width: 100%;
+    text-align: center;
+    margin-top: 10px;
+    font-size: 1.4em;
+    font-weight: 1.4em;
+}

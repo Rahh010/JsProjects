@@ -1,0 +1,33 @@
+
+
+header{
+    display: flex;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin: 20px;
+    font-size: 1.5em;
+}
+.HexVal{
+    text-align: right;
+    width: 100%;
+    flex: 1;
+    
+}
+
+#title{
+    flex:3;
+}
+
+.button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    
+}
+.button button{
+    font-size: 1.5em;
+    padding: 20px;
+    background-color: aqua;
+}
+

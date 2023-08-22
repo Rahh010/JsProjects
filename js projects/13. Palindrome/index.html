@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LengthConverter</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <div class="box">
+        <div class="header">
+            <h2>Palindrome Checker</h2> 
+            
+        </div>
+        <div class="input1">
+          <input id="input" class="input" required>
+         </div>
+        <div class="button">
+           <button for="input"  type="submit" onclick="check()">Check</button>
+        </div>
+        <div class="resultclass1">
+           <div class="resultclass">
+             <div id="result">
+             </div>
+        </div>
+    </div>
+
+        <script>
+            
+            
+            function check()
+            {
+                let Var = document.querySelector("#input").value
+
+                let string = Var.replaceAll(" ","").toLowerCase()
+                
+                let string2 = Var.split("").reverse().join("").replaceAll(" ","").toLowerCase()
+
+                    let palindrome = "The given string is palindrome"
+                    let notpalindrome = "The given string is not palindrome"
+                    let rate
+
+                if (string == string2) {
+                    rate = palindrome
+                } else {
+                    rate = notpalindrome
+                }
+
+                let result = document.querySelector("#result")
+                result.innerHTML = rate
+            }
+            
+        </script>
+          
+     </div>
+    
+</body>
+</html>

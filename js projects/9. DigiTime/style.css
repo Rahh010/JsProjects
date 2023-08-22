@@ -1,0 +1,15 @@
+.header{
+    border: 2px solid black;
+    width: fit-content;
+    padding:10px;
+    font-size: 4em;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color:#89CFF0;
+}
+

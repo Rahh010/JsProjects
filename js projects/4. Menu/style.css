@@ -1,0 +1,29 @@
+#menuItem{
+    background-color: wheat;
+    border: 1px solid white;
+}
+
+#img{
+    width:200px;
+    height:200px;
+}
+
+#txt{
+    margin: 30px;
+    font-style: italic;
+}
+
+#line{
+    border: 3px solid gray;
+}
+
+.btn{
+    border: 2px solid black;
+    background-color: whitesmoke;
+    color:black;
+}
+
+.btn:hover{
+    background-color: black;
+    color:whitesmoke;
+}

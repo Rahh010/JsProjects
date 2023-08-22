@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LengthConverter</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <div class="box">
+        <div class="header">
+            <h2>EB converter</h2> 
+            <h3>enter the number of units</h3>
+            
+        </div>
+        <div class="input1">
+          <input id="input" class="input" required>
+         </div>
+        <div class="button">
+           <button for="input"  type="submit" onclick="get()">Check</button>
+        </div>
+        <div class="resultclass1">
+           <div class="resultclass">
+             <div id="result">
+             </div>
+        </div>
+    </div>
+
+        <script>
+            function get()
+            {
+
+               let inp = Number(document.querySelector("#input").value)
+                let rate
+               if(inp <= 50){
+                    rate = inp*0.75
+               }
+                else if (inp > 50 && inp <= 150){
+                    rate = (inp-50)+37.5
+               }
+                else if (inp > 150 && inp <=250) {
+                    rate = ((inp-150)*1.30)+137.5
+                }
+                else{
+                    rate = ((inp-250)*1.5)+267.5
+                }
+
+
+
+               let result = document.querySelector("#result")
+               result.innerHTML = rate
+            }
+
+            
+        </script>
+          
+     </div>
+    
+</body>
+</html>
